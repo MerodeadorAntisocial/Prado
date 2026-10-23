@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #262424;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-title h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.user-icon img {
+    height: 80px;
+    width: 80px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link {
+    color: #c5d84d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.banner {
+    width: 64%;
+    background-color: rgba(38, 36, 36, 1);
+    border: 4px solid #35AB45;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    padding: 12px 25px;
+}
+
+.banner h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.redes {
+    display: flex;
+    background-color: #424242;
+    padding: 20px;
+    border: 4px solid green;
+    border-radius: 25px;
+    min-height: 200px;
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #424242;
+    padding: 20px;
+    border: 4px solid green;
+    border-radius: 25px;
+    min-height: 200px;
+    width: 90%;
+    max-width: 1000px;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+}
+
+.contacto a {
+    color: rgb(234, 255, 112);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.redes a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #1c1c1c;
+    height: 60px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner {
+        width: 100%;
+        border-right: 4px solid #35AB45;
+        border-radius: 25px;
+    }
+
+    .redes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

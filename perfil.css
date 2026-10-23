@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #262424;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    min-height: 100px;
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 35px;
+}
+
+.nave {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nave img {
+    height: 80px;
+    width: 80px;
+    
+}
+
+.nave h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nave1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nave1 a {
+    text-decoration: none;
+    color: #c5d84d;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+
+.contenedor-perfil {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.tarjeta-perfil {
+    background-color: #424242;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid greenyellow;
+}
+
+.tarjeta-perfil h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grupo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.campo-form {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #c5d84d;
+    border-radius: 8px;
+    background-color: rgba(38, 36, 36, 1);
+    color: greenyellow;
+    font-size: 15px;
+
+}
+
+
+
+.boton-guardar {
+    background-color: green;
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+
+footer {
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer a {
+    color: #c5d84d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nave1 {
+        justify-content: center;
+    }
+
+    .tarjeta-perfil {
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}

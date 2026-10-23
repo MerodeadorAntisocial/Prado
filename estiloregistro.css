@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('promedio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(43, 43, 43, 0.9);
+}
+
+.nav-header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+header img {
+    height: 80px;
+    width: 80px;
+    
+}
+
+.contactanos {
+    padding: 8px 15px;
+    background-color: darkseagreen;
+    border-top: 4px solid green;
+    border-radius: 5px;
+}
+
+.contactanos a {
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu {
+    padding: 8px 15px;
+    border-top: 4px solid yellow;
+    background-color: rgb(162, 162, 98);
+    border-radius: 5px;
+}
+
+.menu a {
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    
+    margin: 40px auto;
+    background-color: #2B2B2B;
+    padding: 30px;
+    border-radius: 25px;
+    color: white;   
+    border-right: 2px solid greenyellow;
+    border-bottom: 2px solid greenyellow;
+    border-left: 2px solid greenyellow;
+    text-align: center;
+    gap: 15px;
+}
+
+.registro {
+    background-color: darkseagreen;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    padding: 10px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 10px;
+}
+
+.boton-enviar {
+    background-color: darkseagreen; 
+    color: white; 
+    border: 2px solid greenyellow; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: bold;
+    
+    text-decoration: none;
+    
+}
+
+
+
+.consejo {
+    background-color: #424242;
+    border-radius: 25px;
+    padding: 15px;
+    width: 100%;
+}
+
+.menu2 {
+    padding: 8px;
+    background-color: green;
+    border-radius: 25px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.menu2 a {
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactanos, .menu {
+        width: 100%;
+        text-align: center;
+    }
+}
