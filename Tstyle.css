@@ -10,7 +10,7 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height:100%;
 }
 
 header {
@@ -52,26 +52,23 @@ nav {
 }
 
 .nav-link {
-    background-color: #35AB45;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 25px;
+    
+    color:#c5d84d;
+    font-size: 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    
+    
 }
 
-.nav-link:hover {
-    background-color: #2e963c;
-}
+
 
 main {
     flex: 1;
     display: flex;
     padding: 30px;
     gap: 40px;
-    max-width: 1200px;
+    
     width: 100%;
     margin: 0 auto;
 }
@@ -90,6 +87,7 @@ main {
     background-color: #35AB45;
     border-radius: 20px;
     text-align: center;
+    
 }
 
 .canchas {
@@ -103,7 +101,8 @@ main {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    
+    text-decoration: none;
 }
 
 .titulo {
@@ -112,9 +111,15 @@ main {
     font-weight: bold;
     text-align: center;
     color: white;
+    text-decoration: none;
+    background-color: #828a3f;
 }
 
-.cancha:first-child .titulo {
+.cancha a{
+    text-decoration: none;
+}
+
+.canchavfirst-child .titulo {
     background-color: #828a3f;
 }
 
@@ -152,7 +157,9 @@ footer {
     align-items: center;
     padding: 20px;
     width: 100%;
-    margin-top: auto;
+    
+    position: absolute;
+    bottom: 0px;
 }
 
 footer a {

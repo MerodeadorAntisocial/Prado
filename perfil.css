@@ -7,7 +7,7 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    
     background-color: #262424;
     color: white;
     display: flex;
@@ -16,7 +16,7 @@ body {
 
 header {
     width: 100%;
-    min-height: 100px;
+    
     background-color: #2B2B2B;
     display: flex;
     justify-content: space-between;

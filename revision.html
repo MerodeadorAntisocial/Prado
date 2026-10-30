@@ -4,36 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pagos.css">
-    <title>Prado Revisión</title>
+    <title>Prado - Revisión de Pago</title>
 </head>
 
 <body>
-    <header class="encabezado">
+    <header>
         <div class="nave">
-            <img src="imagenes/logo.png" alt="Logotipo">
+            <a href="index.html"><img src="imagenes/logo.png" alt="Logotipo"></a>
             <h1>Prado</h1> 
             <h2>REVISIÓN DE PAGO</h2>
         </div>
     </header>
     
     <main class="main-content">
+
         <div class="boton-volver-container">
-            <a class="volver" href="canchas.html">Volver</a>
+            <a class="volver" href="canchas.html"> Volver al menú</a>
         </div>
 
-        <div>
-            <h3 class="seleccion1">
-            EL PAGO SE HA COMPLETADO CORRECTAMENTE.
-            MUCHAS GRACIAS POR CONFIAR EN NOSOTROS.
-            SE LE ENVIARA UN COMPROBANTE A SU CORREO
-            JohnDoe@Gmail.Com
-            </h3>
-        </div>
 
+        <section class="seleccion1">
+            
+
+            <h3 class="titulo-confirmacion">¡El pago se ha completado correctamente!</h3>
+
+            <p class="mensaje-agradecimiento">
+                Muchas gracias por confiar en nosotros. Se ha enviado un comprobante detallado a su correo electrónico.
+            </p>
+
+            <div class="aviso-presencial">
+                <h1 class="icono-alerta">⚠️</h1>
+                <p>Recuerde: Debe presentar este comprobante de forma presencial al ingresar a las canchas.</p>
+            </div>
+        </section>
+
+        <!-- Acción de cancelar turno -->
+        <div class="boton-cancelar-container">
+            <a class="turno" href="#">Cancelar Turno</a>
+        </div>
     </main>
 
     <footer>
-        <a href="#">Ayuda</a>
+        <a href="ayuda.html">Ayuda</a>
         <a href="contacto.html">Contacto</a>
         <a href="redes.html">Redes sociales</a>
     </footer>

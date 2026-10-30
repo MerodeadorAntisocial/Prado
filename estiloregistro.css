@@ -5,14 +5,28 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    
     background-image: url('promedio.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
     display: flex;
     flex-direction: column;
+}
+
+footer {
+    
+    padding: 20px;
+    background-color: #1c1c1c;
+
+    position: absolute;
+    bottom: 0%;
+    width:100%;
 }
 
 header {
@@ -32,7 +46,6 @@ header {
 header img {
     height: 80px;
     width: 80px;
-    
 }
 
 .contactanos {
@@ -68,8 +81,7 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    
+    width: 60%;
     margin: 40px auto;
     background-color: #2B2B2B;
     padding: 30px;
@@ -140,12 +152,8 @@ input {
     padding: 10px 20px; 
     font-size: 16px;
     font-weight: bold;
-    
     text-decoration: none;
-    
 }
-
-
 
 .consejo {
     background-color: #424242;
@@ -169,13 +177,8 @@ input {
     font-size: 16px;
 }
 
-footer {
-    margin-top: auto;
-    padding: 20px;
-    background-color: #1c1c1c;
-}
 
-/* Media Queries */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;

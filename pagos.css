@@ -7,14 +7,15 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    height:100%;
+    
     background-color: #262424;
     color: white;
     display: flex;
     flex-direction: column;
 }
 
-header.encabezado {
+header{
     width: 100%;
     background-color: #2B2B2B;
     display: flex;
@@ -33,7 +34,6 @@ header.encabezado {
 .nave img {
     height: 80px;
     width: 80px;
-    
 }
 
 .nave h1 {
@@ -48,28 +48,14 @@ header.encabezado {
     flex: 1;
     text-align: center;
 }
-.inicio{
-    font-size: 16px;
-    font-weight: bold;
-    
-    text-align: left;
-    background-color: #c5d84d;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    color:white;
-    
-}
+
 
 .boton-volver-container {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    position:absolute;
-    left: 0%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 .volver {
@@ -78,51 +64,123 @@ header.encabezado {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 25px;
+    padding: 12px 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
     
 }
 
 
-.main-content {
+.boton-cancelar-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.turno {
+    color: #262424;
+    font-weight: bold;
+    background-color: #c5d84d;
+    font-size: 16px;
+    padding: 12px 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    text-decoration: none;
+    
+}
+
+
+
+
+.principal{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px 60px 20px;
     flex: 1;
+    padding: 20px 0 40px 0;
+    width: 100%;
+    
 }
+
 
 .seleccion {
     background-color: #35AB45;
     width: 400px;
-    max-width: 90%;
+    margin: 20px auto;
     border-radius: 25px;
     padding: 15px;
     text-align: center;
     font-size: 20px;
     color: #ffffff;
     font-weight: bold;
-    margin: 20px auto;
 }
 
-.seleccion1{
+.seleccion1 {
     background-color: #424242;
-    width: 50%;
-    max-width: 90%;
+    width: 90%;
+    
     border-radius: 25px;
-    padding: 30px;
+    border: 2px solid #35AB45;
+    padding: 35px 30px;
+    margin: 30px auto;
     text-align: center;
-    font-size: 18px;
     color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.icono-exito {
+    background-color: rgba(53, 171, 69, 0.15);
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-confirmacion {
+    font-size: 22px;
+    color: #c5d84d;
     font-weight: bold;
-    margin: 20px auto;
+    line-height: 1.3;
+}
+
+.mensaje-agradecimiento {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.aviso-presencial {
+    background-color: #2b2b2b;
+    border-left: 4px solid #c5d84d;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    width: 100%;
+}
+
+.aviso-presencial p {
+    font-size: 14px;
+    color: #f0f0f0;
+    line-height: 1.4;
+}
+
+.icono-alerta {
+    font-size: 20px;
 }
 
 .seleccion2 {
     background-color: #424242;
     width: 60%;
-    
     border-radius: 25px;
     border: 4px solid #c5d84d;
     padding: 20px;
@@ -133,14 +191,14 @@ header.encabezado {
     line-height: 30px;
 }
 
-.titulo{
+.titulo {
     text-align: left; 
-    color:gold;
+    color: gold;
 }
+
 
 .contenedor_de_pagos {
     width: 90%;
-    max-width: 1100px;
     margin: 30px auto;
     display: flex;
     justify-content: center;
@@ -151,7 +209,6 @@ header.encabezado {
 
 .pago {
     flex: 1;
-    
     text-align: center;
     background-color: #D9D9D9;
     border: 3px solid #35AB45;
@@ -173,7 +230,6 @@ header.encabezado {
     padding: 10px;
     height: 120px;
     width: 120px;
-    
 }
 
 .pago h3 {
@@ -193,10 +249,8 @@ header.encabezado {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    
     width: 100%;
 }
-
 
 
 footer {
@@ -207,7 +261,8 @@ footer {
     align-items: center;
     padding: 20px;
     width: 100%;
-    margin-top: auto;
+    
+
 }
 
 footer a {
@@ -215,9 +270,360 @@ footer a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    
 }
 
-/* Media Queries */
+
+
+/* BILLETERA VIRTUAL*/
+
+.tarjeta-pago {
+    background-color: #424242;
+    width: 90%;
+    
+    border-radius: 25px;
+    border: 2px solid #35AB45;
+    padding: 35px 30px;
+    margin: 20px auto 40px auto;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.titulo-metodo {
+    font-size: 22px;
+    color: #c5d84d;
+    font-weight: bold;
+    border-bottom: 2px solid #35AB45;
+    padding-bottom: 12px;
+}
+
+.inicio{
+    color:#c5d84d;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.paso-pago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.paso-numero {
+    background-color: #35AB45;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paso-instruccion {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.caja-alias {
+    background-color: #2b2b2b;
+    border: 2px dashed #c5d84d;
+    border-radius: 15px;
+    padding: 18px 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.label-alias {
+    font-size: 12px;
+    color: #a0a0a0;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.alias-codigo {
+    font-size: 22px;
+    color: #c5d84d;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.alias-titular {
+    font-size: 14px;
+    color: #d0d0d0;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px 28px;
+    border-radius: 25px;
+    align-items: center;
+    gap: 10px;
+
+    position: absolute;
+
+    bottom: 10px;
+    left: 45%;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .tarjeta-pago {
+        width: 92%;
+        padding: 25px 20px;
+    }
+
+    .alias-codigo {
+        font-size: 18px;
+    }
+
+    .btn-whatsapp {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
+
+
+/* DEBITO*/
+
+
+.titulo-debito {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    flex: 1;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.nave-inicio {
+    display: flex;
+    align-items: center;
+}
+
+.link-inicio {
+    color: #c5d84d;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+
+
+.contenedor-pago-tarjeta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 90%;
+    
+    margin: 40px auto;
+}
+
+/* Columna Izquierda Formulario */
+.columna-formulario {
+    flex: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-tarjeta {
+    background-color: #35AB45;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 22px;
+    border-radius: 18px 18px 0 0;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.caja-formulario-tarjeta {
+    background-color: #424242;
+    border-radius: 0 20px 20px 20px;
+    padding: 25px 30px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.grid-tarjeta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 18px 25px;
+}
+
+.campo-tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.col-izq {
+    grid-column: 1 / 2;
+}
+
+.col-der {
+    grid-column: 2 / 3;
+}
+
+.campo-tarjeta label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.campo-tarjeta input {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 15px;
+    color: #333333;
+    font-weight: bold;
+    
+}
+
+.campo-tarjeta input::placeholder {
+    color: #777777;
+    font-weight: normal;
+}
+
+.contenedor-btn-continuar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.btn-continuar {
+    background-color: #35AB45;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+.columna-resumen {
+    flex: 1;
+}
+
+.tarjeta-resumen-reserva {
+    background-color: #2b2b2b;
+    border: 2px solid #35AB45;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.resumen-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.img-resumen-cancha {
+    width: 110px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info-cancha-tipo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.resumen-detalles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.item-detalle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.linea-resumen {
+    border: none;
+    border-top: 1px solid #555555;
+    margin: 5px 0;
+}
+
+.resumen-total-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.monto-total {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+
+@media (max-width: 850px) {
+    .contenedor-pago-tarjeta {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .grid-tarjeta {
+        grid-template-columns: 1fr;
+    }
+
+    .col-izq {
+        grid-column: 1 / -1;
+    }
+
+    .col-der {
+        grid-column: 1 / -1;
+    }
+
+    .titulo-debito {
+        font-size: 20px;
+    }
+}
+
+
 @media (max-width: 768px) {
     header.encabezado {
         flex-direction: column;
@@ -234,6 +640,19 @@ footer a {
         font-size: 20px;
     }
 
+    .seleccion1 {
+        width: 92%;
+        padding: 25px 20px;
+    }
+
+    .titulo-confirmacion {
+        font-size: 19px;
+    }
+
+    .mensaje-agradecimiento {
+        font-size: 14px;
+    }
+
     .contenedor_de_pagos {
         flex-direction: column;
         align-items: center;
@@ -241,21 +660,13 @@ footer a {
 
     .pago {
         width: 100%;
-        max-width: 100%;
+        
     }
 
     footer {
         flex-direction: column;
         gap: 12px;
         text-align: center;
-    }
-
-    .seleccion2 {
-        font-size: 12px;
-    }
-
-    .titulo{
-        font-size:14px;
     }
 }
 
@@ -270,12 +681,11 @@ footer a {
 
     .seleccion {
         font-size: 16px;
-    }
-    .seleccion2 {
-        font-size: 12px;
+        width: 90%;
     }
 
-    .titulo{
-        font-size:14px;
+    .aviso-presencial {
+        flex-direction: column;
+        text-align: center;
     }
 }

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #262424;
+    color: #ffffff;
+    display: flex;
+}
+
+aside {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #2b2b2b;
+}
+
+aside div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+aside img {
+    height: 80px;
+    width: 80px;
+}
+
+aside h1 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.perfil {
+    height: 60px;
+    width: 60px;
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+aside nav a {
+    color: #c5d84d;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main {
+    flex: 1;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main header {
+    background-color: #35AB45;
+    border-radius: 20px;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main header h2 {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+main header p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+main section {
+    display: flex;
+    gap: 25px;
+    flex: 1;
+}
+
+main section > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main h3 {
+    background-color: #424242;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.cuerpo {
+    background-color: #35AB45;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex: 1;
+}
+
+article {
+    background-color: #424242;
+    border-radius: 20px;
+    padding: 14px 16px;
+    display: flex;
+    position: relative;
+}
+
+article > div:first-child {
+    background-color: #2b2b2b;
+    border-radius: 16px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article > div:first-child p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+article > div:first-child h4 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 2px 0;
+}
+
+article > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-left: 20px;
+}
+
+article > div:nth-child(2) p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+article > div:nth-child(2) img {
+    width: 24px;
+    height: 24px;
+    background-color: #c5d84d;
+    border-radius: 50%;
+}
+
+.reservado, .finalizado {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    padding: 6px 22px;
+    border-radius: 16px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.reservado {
+    background-color: #35AB45;
+}
+
+.finalizado {
+    background-color: #8b0000;
+    border: 1px solid #a00000;
+}
+
+.precio {
+    position: absolute;
+    bottom: 14px;
+    right: 16px;
+    background-color: #35AB45;
+    padding: 6px 35px;
+    border-radius: 16px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    main section {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    aside nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    main header h2 {
+        font-size: 28px;
+    }
+
+    article {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    article > div:nth-child(2) {
+        margin-left: 0%;
+    }
+
+    .reservado, .finalizado {
+        position: relative;
+        top: 0%;
+        right: 0%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .precio {
+        position: relative;
+        bottom: 0%;
+        right: 0%;
+        text-align: center;
+        width: 100%;
+    }
+}

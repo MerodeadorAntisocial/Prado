@@ -7,7 +7,7 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    
     background-color: #262424;
     color: white;
     display: flex;
@@ -16,7 +16,7 @@ body {
 
 header {
     width: 100%;
-    min-height: 100px;
+    
     background-color: #2B2B2B;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@ header {
 .nave img {
     height: 80px;
     width: 80px;
-    object-fit: contain;
+    
 }
 
 .nave h1 {
@@ -162,7 +162,10 @@ header {
     justify-content: space-evenly;
     align-items: center;
     padding: 22px 45px;
-    margin-top: auto;
+    
+    
+    position: absolute;
+    bottom: 0%;
 }
 
 .footer a {

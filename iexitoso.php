@@ -1,0 +1,33 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloregistro.css">
+    <title>Prado - Inicio Exitoso</title>
+</head>
+<body>
+    <header>
+        <a href="index.php"><img src="imagenes/logo.png" alt="Logotipo"></a>
+    </header>
+
+    <main class="contenedor">
+        <div class="registro">
+            <h2>INICIO DE SESIÓN EXITOSO</h2>
+        </div>
+
+        <h3>Su cuenta ha sido iniciada correctamente.</h3>
+
+        <div class="consejo">
+            <h3>Ante cualquier necesidad observe la información de su perfil.</h3>
+
+            <div class="menu2">
+                <a href="perfil.php">Ir a perfil</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
